@@ -1,0 +1,48 @@
+{
+    "name": "@repo/use-safe-query-param-states-from-zod",
+    "version": "0.1.0",
+    "private": true,
+    "sideEffects": false,
+    "type": "module",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "exports": {
+        ".": "./src/index.ts",
+        "./parsers": "./src/parsers.ts",
+        "./defaults": "./src/defaults.ts",
+        "./types": "./src/types.ts"
+    },
+    "scripts": {
+        "prettify": "prettier . --write --no-error-on-unmatched-pattern",
+        "format": "bun run prettify",
+        "format:check": "prettier . --check --no-error-on-unmatched-pattern",
+        "lint": "eslint . --fix --cache --concurrency=auto",
+        "type-check": "tsc --noEmit",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:coverage": "vitest run --coverage"
+    },
+    "dependencies": {
+        "@repo/type-guards": "*",
+        "nuqs": "catalog:web",
+        "zod": "catalog:utils"
+    },
+    "devDependencies": {
+        "@repo/config-eslint": "*",
+        "@repo/config-prettier": "*",
+        "@repo/config-typescript": "*",
+        "@repo/config-vitest": "*",
+        "@types/node": "catalog:build",
+        "@types/react": "catalog:react",
+        "@vitest/coverage-v8": "catalog:testing",
+        "eslint": "catalog:linting",
+        "next": "catalog:next",
+        "react": "catalog:react",
+        "vitest": "catalog:testing",
+        "typescript": "catalog:build"
+    },
+    "peerDependencies": {
+        "next": ">=15.0.0",
+        "react": ">=19.2.8"
+    }
+}

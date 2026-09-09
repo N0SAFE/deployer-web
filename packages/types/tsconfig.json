@@ -1,0 +1,19 @@
+{
+  "extends": "@repo/config-typescript/config/base.json",
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "bundler",
+    "paths": {
+      "@repo/ui/*": [
+        "./*"
+      ],
+      "@repo/*": [
+        "../*"
+      ]
+    },
+  },
+  "include": [
+    "**/*.ts",
+    "eslint.config.ts"
+  ]
+}

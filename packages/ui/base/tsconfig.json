@@ -1,0 +1,20 @@
+{
+    "extends": "@repo/config-typescript/config/nextjs.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ]
+}

@@ -1,0 +1,9 @@
+[run]
+# Force all scripts to use Bun runtime instead of Node.js
+bun = true
+
+
+[install]
+# Explicitly set the linker to isolated
+linker = "isolated"
+prefere = "offline"

@@ -1,0 +1,9 @@
+{
+  "extends": "@repo/config-typescript/config/test.json",
+  "compilerOptions": {
+    "paths": {
+      "@": ["./src"]
+    }
+  },
+  "include": ["__tests__/**/*"]
+}
